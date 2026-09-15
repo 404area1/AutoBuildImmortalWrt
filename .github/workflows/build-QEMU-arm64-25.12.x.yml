@@ -127,8 +127,8 @@ jobs:
           ls -lah ${{ github.workspace }}/bin/targets/armsr/armv8/ || true
           # 常用镜像格式
           cp ${{ github.workspace }}/bin/targets/armsr/armv8/*combined-efi.img.gz ${{ github.workspace }}/ 2>/dev/null || true
-          cp ${{ github.workspace }}/bin/targets/armsr/armv8/*combined-efi.qcow2* ${{ github.workspace }}/ 2>/dev/null || true
-          cp ${{ github.workspace }}/bin/targets/armsr/armv8/*combined-efi.vmdk* ${{ github.workspace }}/ 2>/dev/null || true
+          cp ${{ github.workspace }}/bin/targets/armsr/armv8/*combined-efi.qcow2 ${{ github.workspace }}/ 2>/dev/null || true
+          cp ${{ github.workspace }}/bin/targets/armsr/armv8/*combined-efi.vmdk ${{ github.workspace }}/ 2>/dev/null || true
           echo "==== workspace artifacts ===="
           ls -lh ${{ github.workspace }}/*.{img.gz,qcow2,qcow2.gz,vmdk,vmdk.gz} 2>/dev/null || echo "No matching artifacts found"
 
